@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/feedbackBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Feedback"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_gravity="right"
+                        android:textSize="18dp"
+                        android:layout_marginRight="@dimen/common_15_dp"
+                        android:background="@drawable/rect_blue"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:textSize="10dp"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Shop Picture "
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/supportImageNew"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:background="@drawable/ic_launcher_background"
+                            />
+
+                        <ImageView
+                            android:id="@+id/takeApicNew"
+                            android:layout_width="50dp"
+                            android:layout_gravity="right|bottom"
+                            android:layout_height="50dp"
+                            android:background="@drawable/ic_camera_alt_black_24dp" />
+                    </FrameLayout>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Shop Name "
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15.1dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/rect"
+                            android:padding="12dp">
+
+
+                            <EditText
+                                android:id="@+id/shopName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:singleLine="true"
+                                android:background="#00000000"
+                                android:hint="Enter full name" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Contact Person "
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15.1dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/rect"
+                            android:padding="12dp">
+
+
+                            <EditText
+                                android:id="@+id/contactPerson"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:singleLine="true"
+                                android:background="#00000000"
+                                android:hint="Enter full name" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Contact Person Number "
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15.1dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/rect"
+                            android:padding="12dp">
+
+
+                            <EditText
+                                android:id="@+id/contactPMNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:singleLine="true"
+                                android:inputType="number"
+                                android:background="#00000000"
+                                android:hint="Enter mobile number" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Contact Person Email "
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15.1dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/rect"
+                            android:padding="12dp">
+
+
+                            <EditText
+                                android:id="@+id/contactPemail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:singleLine="true"
+                                android:background="#00000000"
+                                android:hint="Enter email-id" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Proprietor Name "
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15.1dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/rect"
+                            android:padding="12dp">
+
+
+                            <EditText
+                                android:id="@+id/ownerName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:singleLine="true"
+                                android:background="#00000000"
+                                android:hint="Enter full name" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Proprietor Contact"
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/start_time_lay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rect"
+                            android:orientation="horizontal"
+                            android:padding="12dp">
+
+
+                            <EditText
+                                android:id="@+id/ownerContactnumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="#00000000"
+                                android:inputType="number"
+                                android:hint="Enter mobile number"
+                                />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Block "
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15.1dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/rect"
+                            android:padding="12dp">
+
+
+                            <EditText
+                                android:id="@+id/blockID"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:singleLine="true"
+                                android:inputType="text"
+                                android:background="#00000000"
+                                android:hint="Enter block" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Address"
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rect"
+                            android:orientation="horizontal"
+                            android:padding="12dp">
+
+
+                            <EditText
+                                android:id="@+id/shopAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="#00000000"
+                                android:inputType="text"
+                                android:hint="Enter location details "
+                                />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Shop Situated In "
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15.1dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/rect"
+                            android:padding="12dp">
+
+                            <Spinner
+                                android:id="@+id/spinner_situated"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/situatedType"/>
+
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Shop In L Junction Road "
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15.1dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/rect"
+                            android:padding="12dp">
+
+                            <Spinner
+                                android:id="@+id/spinner_junctionRoad"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/yesnoType"/>
+
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Space Available For Hoarding "
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15.1dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/rect"
+                            android:padding="12dp">
+
+                            <Spinner
+                                android:id="@+id/spinner_space_of_hoarding"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/yesnoType"/>
+
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Available Godown Space"
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rect"
+                            android:orientation="horizontal"
+                            android:padding="12dp">
+
+
+                            <EditText
+                                android:id="@+id/shopSpacesqft"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="#00000000"
+                                android:inputType="number"
+                                android:hint="Enter space details in sqft"
+                                />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Nature Of Business"
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rect"
+                            android:orientation="horizontal"
+                            android:padding="12dp">
+
+
+                            <Spinner
+                                android:id="@+id/nature"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/natureofbusiness"/>
+
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* No of siblings"
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rect"
+                            android:orientation="horizontal"
+                            android:padding="12dp">
+
+
+                            <EditText
+                                android:id="@+id/noofsib"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="#00000000"
+                                android:inputType="number"
+                                android:hint="Enter number of siblings"
+                                />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Next Followup Date"
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rect"
+                            android:orientation="horizontal"
+                            android:padding="12dp">
+
+
+                            <EditText
+                                android:id="@+id/nextfollowupdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="#00000000"
+                                android:inputType="number"
+                                android:focusable="false"
+                                android:hint="Enter next follow-up date"
+                                />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Outcome"
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rect"
+                            android:orientation="horizontal"
+                            android:padding="12dp">
+
+
+                            <Spinner
+                                android:id="@+id/outcome"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/out_come"/>
+
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Brand Selling"
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyv_brand"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"/>
+
+                   <!-- <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/brandSellingLay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rect"
+                            android:orientation="horizontal"
+                            android:padding="12dp">
+
+
+                            <EditText
+                                android:id="@+id/sellingBrandTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="#00000000"
+                                android:inputType="textMultiLine"
+                                android:focusable="false"
+                                android:hint="Enter brand name &amp; details"
+                                />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>-->
+
+
+                    <TextView
+                        android:id="@+id/add_sellingBrand"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="28.7dp"
+                        android:layout_marginTop="30.2dp"
+                        android:layout_marginRight="28.9dp"
+                        android:background="@drawable/rect_blue"
+                        android:gravity="center"
+                        android:text="Add"
+                        android:textColor="#fbfbfb"
+                        android:textSize="20sp" />
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Discussion"
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15.1dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/rect"
+                            android:padding="12dp">
+
+
+
+                            <EditText
+                                android:id="@+id/new_register_discuss"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:gravity="top"
+                                android:isScrollContainer="true"
+                                android:layout_marginLeft="10dp"
+                                android:background="#00000000"
+                                android:inputType="textMultiLine"
+                                android:hint="Enter discussion in details" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/submitNewRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="28.7dp"
+                        android:layout_marginTop="30.2dp"
+                        android:layout_marginRight="28.9dp"
+                        android:background="@drawable/rect_blue"
+                        android:gravity="center"
+                        android:text="SUBMIT"
+                        android:textColor="#fbfbfb"
+                        android:textSize="20sp" />
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

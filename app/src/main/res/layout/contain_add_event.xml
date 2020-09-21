@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Meeting Type "
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15.1dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/event_type_lay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/rect"
+                            android:padding="10dp">
+
+                            <Spinner
+                                android:id="@+id/spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/eventType"/>
+
+
+                         <!--   <EditText
+                                android:id="@+id/event_type_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:singleLine="true"
+                                android:focusable="false"
+                                android:background="#00000000"
+                                android:hint="Enter event date" />
+-->
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Meeting Date "
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15.1dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/event_date_lay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/rect"
+                            android:padding="12dp">
+
+
+                            <EditText
+                                android:id="@+id/event_date_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:singleLine="true"
+                                android:focusable="false"
+                                android:background="#00000000"
+                                android:hint="Enter meeting date" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Start Time"
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/start_time_lay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rect"
+                            android:orientation="horizontal"
+                            android:padding="12dp">
+
+
+                            <EditText
+                                android:id="@+id/start_time_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="#00000000"
+                                android:focusable="false"
+                                android:hint="Enter event start time"
+                                />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* End Time"
+                        android:visibility="gone"
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        android:visibility="gone"
+                        app:cardElevation="1dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/end_time_lay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rect"
+                            android:orientation="horizontal"
+                            android:padding="12dp">
+
+
+                            <EditText
+                                android:id="@+id/end_time_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="#00000000"
+                                android:focusable="false"
+                                android:hint="Enter event end time"
+                                />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                    <TextView
+                        android:id="@+id/multiTxtH"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Location"
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15.1dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/rect"
+                            android:padding="12dp">
+
+
+
+                            <EditText
+                                android:id="@+id/leave_reasion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="top"
+                                android:isScrollContainer="true"
+                                android:layout_marginLeft="10dp"
+                                android:background="#00000000"
+                                android:focusable="false"
+                                android:inputType="textMultiLine"
+                                android:hint="Enter meeting location" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Budget"
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15.1dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/event_budget"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/rect"
+                            android:padding="12dp">
+
+
+                            <EditText
+                                android:id="@+id/event_budget_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:singleLine="true"
+                                android:inputType="number"
+                                android:background="#00000000"
+                                android:hint="Enter meeting budget amount" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* No Of heads "
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15.1dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/rect"
+                            android:padding="12dp">
+
+
+                            <EditText
+                                android:id="@+id/event_no_of_heads"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:singleLine="true"
+                                android:inputType="number"
+                                android:background="#00000000"
+                                android:hint="Enter No Of heads" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/apply_leave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="28.7dp"
+                        android:layout_marginTop="30.2dp"
+                        android:layout_marginRight="28.9dp"
+                        android:background="@drawable/rect_blue"
+                        android:gravity="center"
+                        android:text="SUBMIT"
+                        android:textColor="#fbfbfb"
+                        android:textSize="20sp" />
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

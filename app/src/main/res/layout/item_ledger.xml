@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#80ffffff">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#76ECEFF1"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/transaction_date"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="2018-12-11  "
+            android:textSize="12dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/transaction_type"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:text="CREDIT NOTE  " />
+
+       <!-- <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_gravity="center|left"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/transaction_no"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:visibility="gone"
+                android:text="JV18N01-078" />
+
+        </LinearLayout>-->
+
+
+
+        <TextView
+            android:id="@+id/cr_amount"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textColor="@color/green"
+            android:text="643320.00/-" />
+
+
+        <TextView
+            android:id="@+id/dr_amount"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textSize="12dp"
+            android:textColor="@color/red"
+            android:text="643320.00/-" />
+
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:text="953757.00/-" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Select Date "
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="15.1dp"
+                        android:layout_marginRight="18.9dp"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="1dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/rect"
+                            android:padding="12dp">
+
+
+                            <EditText
+                                android:id="@+id/fooding_date_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:singleLine="true"
+                                android:focusable="false"
+                                android:background="#00000000"
+                                android:hint="Enter expense date" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.7dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginRight="18.9dp"
+                        android:text="* Add Expenses Details"
+                        android:textColor="@color/logoColorTwo"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyv_fooding"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:id="@+id/add_foodBtn"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="28.7dp"
+                        android:layout_marginTop="30.2dp"
+                        android:layout_marginRight="28.9dp"
+                        android:background="@drawable/rect_blue"
+                        android:gravity="center"
+                        android:text="Add"
+                        android:textColor="#fbfbfb"
+                        android:textSize="20sp" />
+
+
+
+
+
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/submitFooding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="28.7dp"
+                        android:layout_marginTop="30.2dp"
+                        android:layout_marginRight="28.9dp"
+                        android:background="@drawable/rect_blue"
+                        android:gravity="center"
+                        android:text="SUBMIT"
+                        android:textColor="#fbfbfb"
+                        android:textSize="20sp" />
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="2dp"
+            android:layout_gravity="center"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="#ffffff"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/stats_color"
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorAccent" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Status : Not Approved"
+                        android:id="@+id/textViewStatus"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/textViewtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Time Frame :  2020-07-14-2020-07-16"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="13dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+                    <TextView
+                        android:id="@+id/textViewReason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="3"
+                        android:text="Reason of Leave\n PErsonal"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="13dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,189 @@
+<resources>
+    <string name="app_name">ELEGANT MARCOM</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+
+
+    <string name="shared_no_data"></string>
+    <string name="shared_user_id">id</string>
+    <string name="shared_user_email">email</string>
+    <string name="shared_userphone">phonenumber</string>
+    <string name="shared_user_address">address</string>
+    <string name="shared_user_full_name">jhon</string>
+    <string name="shared_user_image">image</string>
+    <string name="shared_loggedin_status">lstatus</string>
+    <string name="no_internet">Please Check internet</string>
+    <string name="shared_access_token">access token</string>
+    <string name="dutyStatus">dutystatus</string>
+
+    <string name="loginData">loginData</string>
+
+    <string name="shared_lat">lat</string>
+    <string name="shared_long">long</string>
+    <string name="shared_updated_lat">lat</string>
+    <string name="shared_updated_long">long</string>
+    <string name="shared_updated_time">times</string>
+    <string name="shared_updated_location">location</string>
+    <string name="no_shared_data">0</string>
+    <string name="no_data_latlong">0.0</string>
+    <string name="user_info">loginUserDetaliJson</string>
+
+
+    <string name="personallist">personallist</string>
+    <string name="checklist">checklist</string>
+    <string name="arealist">arealist</string>
+    <string name="customerlist">customerlist</string>
+    <string name="productlist">productlist</string>
+    <string name="shared_duty_status">dutystatus</string>
+    <string name="shared_duty_type">dutytype</string>
+
+    <string name="shared_visit_status">visitstatus</string>
+
+    <string name="shared_event_status">eventstatus</string>
+    <string name="shared_event_id">eventid</string>
+
+
+    <string name="areaData">areaData</string>
+    <string name="customerinfo">customerinfo</string>
+    <string name="customerinfo81">customerinfo81</string>
+
+    <string name="permission_rationale">Please grant location permission to start the service</string>
+    <string name="permission_denied_explanation">You have not granted location permission. So the service cannot be started.</string>
+    <string name="settings">settings</string>
+    <string name="title_alert_no_intenet">No internet</string>
+    <string name="msg_alert_no_internet">Please make sure that you have active internet connection.</string>
+    <string name="no_google_playservice_available">No Google Playservice found. Please install it.</string>
+    <string name="msg_location_service_not_started">Location Tracking Not Started</string>
+    <string name="msg_location_service_started">Location Tracking Started</string>
+    <string name="btn_label_refresh">Refresh</string>
+
+    <string-array name="eventType">
+        <item>Dealer/Sub-dealer Meet</item>
+        <item>Masson Meet</item>
+        <item>Engineer Meet</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="foodType">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+    </string-array>
+
+    <string-array name="SellingBrand">
+        <item>TMT</item>
+        <item>  JSW</item>
+        <item>  SHYAM STEEL</item>
+        <item>  SRMB</item>
+        <item>  CAPTAIN</item>
+        <item>  ELCTROL STEEL</item>
+        <item>  MAGADH</item>
+        <item>  KAMDHENU</item>
+        <item>  BALMUKUND</item>
+        <item>  MAITHON</item>
+        <item>  SUPER</item>
+        <item>  MONGIA</item>
+        <item>  OTHERS</item>
+        <item>CEMENT</item>
+        <item>  ULTRATECH</item>
+        <item>  NOVOCO</item>
+        <item>  ACC</item>
+        <item>  AMBUJA</item>
+        <item>  BALMIA</item>
+        <item>  OTHERS</item>
+
+
+    </string-array>
+
+    <string-array name="travelType">
+        <item>Private</item>
+        <item>Public</item>
+    </string-array>
+
+    <string-array name="travelwith">
+        <item>Car</item>
+        <item>Bike</item>
+    </string-array>
+
+
+    <string-array name="brandType">
+        <item>Personal</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="yesnoType">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="yesnodam">
+        <item>Yes</item>
+        <item>No</item>
+        <item>Damaged</item>
+    </string-array>
+
+
+    <string-array name="statusType">
+        <item>Good</item>
+        <item>Damaged</item>
+    </string-array>
+
+    <string-array name="visibilityType">
+        <item>Long View</item>
+        <item>Short View</item>
+        <item>Not Visible</item>
+        <item>Improper Location</item>
+    </string-array>
+
+    <string-array name="situatedType">
+        <item>MKT Place</item>
+        <item>Highway</item>
+        <item>Main Road</item>
+        <item>Inner Road</item>
+        <item>Neighbourhood</item>
+    </string-array>
+
+    <string-array name="natureofbusiness">
+        <item>Distributor</item>
+        <item>Dealer</item>
+    </string-array>
+
+    <string-array name="out_come">
+        <item>+Ve</item>
+        <item>-Ve</item>
+    </string-array>
+
+
+    <string-array name="mediaType">
+        <item>Banner</item>
+        <item>Wall Painting</item>
+        <item>GSB</item>
+        <item>NLB</item>
+        <item>Dealer Hoarding</item>
+        <item>Gantry</item>
+        <item>Pole Kisok</item>
+        <item>Wall Wrap</item>
+        <item>Center</item>
+        <item>Pop Items</item>
+        <item>Others</item>
+    </string-array>
+
+    <string name="Proceed">Proceed</string>
+    <string name="takephoto">Take Photo</string>
+    <string name="choosefromlib">Choose from Library</string>
+    <string name="cancel">Cancel</string>
+    <string name="addphoto">Add Photo!</string>
+    <string name="Usercancelledimagecapture">User cancelled image capture</string>
+    <string name="SorryFailedtocaptureimage">Sorry! Failed to capture image</string>
+
+</resources>

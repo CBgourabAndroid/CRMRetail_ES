@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!-- <group android:id="@+id/grp1">
+     <item
+         android:id="@+id/menu1"
+         android:icon="@drawable/ic_verified_user_black_24dp"
+         android:title="Verify Account"
+         app:showAsAction="always"/>
+     </group>-->
+
+    <!--<group android:id="@+id/grp2">
+
+    <item
+        android:id="@+id/menu2"
+        android:icon="@drawable/ic_format_list_numbered_black_24dp"
+        android:title="View History"
+        app:showAsAction="always"/>
+    </group>-->
+
+
+    <group android:id="@+id/grp4">
+
+        <item
+            android:id="@+id/menu4"
+            android:title="End Visit"
+            app:showAsAction="always"/>
+
+    </group>
+
+</menu>

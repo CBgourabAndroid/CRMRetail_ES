@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="14dp"
+        >
+
+        <ImageView
+            android:id="@+id/sbd_view_animation"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/img_454309" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/sbd_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Sunday May 3,2020 03:45Pm"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sbd_view_animation" />
+
+
+        <LinearLayout
+            android:id="@+id/checkListLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CheckList"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/my_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/rgb_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transport Details"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sbd_view_animation" />
+
+            <RadioGroup
+                android:id="@+id/rbgrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Public"
+                    android:padding="@dimen/common_10_dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Private"
+                    android:padding="@dimen/common_10_dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+      <!--  <TextView
+            android:id="@+id/sbd_text_message"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="24dp"
+            android:text="Your booking has been successfully confirmed. Please check your email for booking and instruction."
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sbd_text_title" />
+-->
+
+        <TextView
+            android:id="@+id/startDutyClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="28.7dp"
+            android:layout_marginRight="28.9dp"
+            android:background="@drawable/rect_blue"
+            android:gravity="center"
+            android:text="Start Duty"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            android:textColor="#fbfbfb"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/addPrivateDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="28.7dp"
+            android:layout_marginRight="28.9dp"
+            android:background="@drawable/rect_blue"
+            android:gravity="center"
+            android:text="Add Details"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            android:textColor="#fbfbfb"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

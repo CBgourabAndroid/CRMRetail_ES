@@ -1,0 +1,32 @@
+package com.crmretail_es.modelClass;
+
+import java.util.List;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+public class CustomerResponse {
+
+
+    @SerializedName("status")
+    @Expose
+    private Integer status;
+    @SerializedName("customer_list")
+    @Expose
+    private List<CUstomer> customer_list = null;
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    public List<CUstomer> getCUstomer() {
+        return customer_list;
+    }
+
+    public void setCUstomer(List<CUstomer> customer_list) {
+        this.customer_list = customer_list;
+    }
+}
